@@ -52,24 +52,24 @@ body {
   right: 0;
   padding: 10px 10px 20px 10px;
 }
-nav {
+.navbar nav {
   margin: 0 0 1.45rem 1.45rem;
 }
-ul {
+.navbar ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type:none;
 }
-li {
+.navbar li {
   float: right;
   list-style: none;
   text-transform: capitalize;
   margin: 1.40rem .9rem 1rem 1rem;
   letter-spacing: 2px;
 }
-a{
-  text-decoration: none;
+#link > a {
+  text-decoration: none!important;
   padding: 10px 10px 20px 10px;  
   font-family: inherit;
   color: #001A7D;
@@ -93,6 +93,7 @@ a{
   left: 0;
   background: #001A7D;
 }
+
 
 /*      HEADER    */
 /*
@@ -260,9 +261,6 @@ span {
 }
 /*    parallax image
 */
- .item__img-wrap {
-  height: 450px;
-} 
 .item {
 	/* margin: 10vh auto; */
   max-width: 100%;
@@ -302,6 +300,7 @@ span {
 .item > .item__img-wrap {
   --aspect-ratio: 10;
   width: 683px;
+  height: 450px;
   overflow: hidden;
   will-change: transform;
   margin-left: 0;
@@ -318,7 +317,6 @@ span {
 .weaver_context_container {
   font-family: 'Akkurat'; 
   display: flex;
-  height: 20vh;
   width: 100%;
   line-height: 1.2;
   flex-direction: row;
@@ -334,8 +332,12 @@ span {
   left: 5%;
   margin-top: 5%;
 }
+.location_svg_container-tablet {
+  position: absolute;
+  left: 5%;
+}
 .weaver_explanation_container {
-  float: right;
+  /* float: right; */
   position: relative;
   right: -30%;
   top: -35%;
@@ -347,6 +349,12 @@ span {
   font-size: 20px;
   color: #3b4500;
   
+}
+.weaver_explanation_text-tablet {
+  text-align: justify;
+  color: #3b4500;
+  background: chocolate;
+  width: 40vw;
 }
 /*  ASIDE STYLES ENDS 
 */

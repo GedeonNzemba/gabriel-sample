@@ -44,7 +44,7 @@ class App extends React.Component {
           <path id="Path_413" data-name="Path 413" d="M498.309,292.142l-3.53-8.256h1.877l2.428,5.5,2.377-5.5h1.877l-3.5,8.256Z" transform="translate(-181.455 -11.174)" fill="#001a7d" />
         </g>
       </svg>,
-      SvgB: <svg xmlns="http://www.w3.org/2000/svg" width="19.338" height="19.333" viewBox="0 0 19.338 19.333">
+      SvgB: <svg xmlns="http://www.w3.org/2000/svg" width="1.415666178623719vw" height="1.415300146412884vw" viewBox="0 0 1.415666178623719vw 1.415300146412884vw">
         <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M9.666,6.948A4.957,4.957,0,1,0,14.622,11.9,4.949,4.949,0,0,0,9.666,6.948Zm0,8.179A3.223,3.223,0,1,1,12.888,11.9a3.228,3.228,0,0,1-3.223,3.223Zm6.316-8.382a1.156,1.156,0,1,1-1.156-1.156A1.153,1.153,0,0,1,15.981,6.745Zm3.283,1.173A5.722,5.722,0,0,0,17.7,3.867a5.759,5.759,0,0,0-4.051-1.562c-1.6-.091-6.38-.091-7.977,0A5.751,5.751,0,0,0,1.624,3.863,5.74,5.74,0,0,0,.063,7.914c-.091,1.6-.091,6.38,0,7.977a5.722,5.722,0,0,0,1.562,4.051A5.766,5.766,0,0,0,5.675,21.5c1.6.091,6.38.091,7.977,0A5.722,5.722,0,0,0,17.7,19.941a5.759,5.759,0,0,0,1.562-4.051c.091-1.6.091-6.376,0-7.972ZM17.2,17.6a3.263,3.263,0,0,1-1.838,1.838c-1.273.5-4.292.388-5.7.388s-4.43.112-5.7-.388A3.263,3.263,0,0,1,2.129,17.6c-.5-1.273-.388-4.292-.388-5.7s-.112-4.431.388-5.7A3.263,3.263,0,0,1,3.967,4.368c1.273-.5,4.292-.388,5.7-.388s4.43-.112,5.7.388A3.263,3.263,0,0,1,17.2,6.206c.5,1.273.388,4.292.388,5.7S17.707,16.335,17.2,17.6Z" transform="translate(0.005 -2.238)" fill="#001a7d" />
       </svg>,
       SvgC: <svg xmlns="http://www.w3.org/2000/svg" width="19.327" height="19.327" viewBox="0 0 19.327 19.327">
@@ -56,7 +56,7 @@ class App extends React.Component {
       SvgE: <svg className="svgE" id="Path_401" xmlns="http://www.w3.org/2000/svg" width="558.212" height="567.028" viewBox="0 0 558.212 567.028" transition="inherit">
         <path d="M685.385,476.2S270.043,395.553,198.572,168.08" fill="none" transform="translate(-257.917 386.801) rotate(-47)" strokeWidth={1} style={{ transition: 'stroke-dashoffset 1s ease-in-out 0s', strokeDasharray: '599.477, 599.477', strokeDashoffset: 0 }} />
       </svg>,
-      SvgF: <svg className="svgF" xmlns="http://www.w3.org/2000/svg" width="299.425" height="326.69" viewBox="0 0 299.425 326.69">
+      SvgF: <svg className="svgF" xmlns="http://www.w3.org/2000/svg" width="21.919838945827234vw" height="47.00575539568345vh" viewBox="0 0 299.425 326.69">
               <path id="_1_vision" data-name="1_vision" d="M198.572,168.08s40.441,128.712,275.457,174.347" transform="matrix(0.559, -0.829, 0.829, 0.559, -249.994, 299.161)" fill="none" stroke="#001a7d" strokeMiterlimit={10} strokeWidth="0.5" />
             </svg>,
       SvgG: <svg className="svgG" xmlns="http://www.w3.org/2000/svg" width="521.684" height="89.443" viewBox="0 0 521.684 89.443">

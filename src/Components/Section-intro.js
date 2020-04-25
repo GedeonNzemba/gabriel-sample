@@ -9,7 +9,7 @@ export class SectionIntro extends React.Component {
       <section id="intro-wrapper">
           <div className="intro_container">
             <div className="intro_inner_container">
-              {/* left content */}
+              {/* right content */}
               <div className="info_content">
                 <h2>{this.props.introHeading}</h2>
                 <p className="intro-top-parag paragraph">
@@ -35,7 +35,7 @@ export class SectionIntro extends React.Component {
                   information a key aspect to why people loves us, our security.
                 </p>
               </div>
-              {/* right content */}
+              {/* left content */}
               <div className="image_content">
                 <div className="content">
                   <div className="item">
@@ -45,6 +45,7 @@ export class SectionIntro extends React.Component {
                   </div>
                 </div>
               </div>
+              {/* svg */}
               <aside id="intro_svg_top">
                 {this.props.SvgF}
               </aside>
@@ -58,8 +59,8 @@ export class SectionIntro extends React.Component {
           <div className="inspiration__quote">
             <div className="quote_wrap">
               <q>
-                {this.props.quote}<br />
-                Weaver
+                {this.props.quote}
+                {" "} Weaver
               </q>
             </div>
           </div>
@@ -77,7 +78,6 @@ export class SectionIntro extends React.Component {
                   Africa, Namibia and Botswana, but their range is cantered within the Northern Cape Province of 
                   South Africa.
                 </p>
-                <br />
                 <br />
                 <p className="intro-bottom-parag paragraph">
                   Sociable Weavers use and maintain their nests
@@ -114,8 +114,18 @@ export class SectionIntro extends React.Component {
                   </picture>
               </div>
             </div>
+            <div className="location_svg_container-tablet">
+              <div className="location_svg">
+                  <picture>
+                    <img src={location_svg} alt=""></img>
+                  </picture>
+              </div>
+            </div>
             <div className="weaver_explanation_container">
               <div className="weaver_explanation_text">
+                “{this.props.weaverQuote}”
+              </div>
+              <div className="weaver_explanation_text-tablet">
                 “{this.props.weaverQuote}”
               </div>
             </div>

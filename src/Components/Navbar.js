@@ -15,11 +15,11 @@ export class Navbar extends React.Component {
                 <div className="navbar">
                     <nav>
                         <ul>
-                            <li id=""><a id="link" href="#">{this.props.contact}</a></li>
-                            <li id=""><a id="link" href="#">{this.props.vision}</a></li>
-                            <li id=""><a id="link" href="#">{this.props.space}</a></li>
-                            <li id=""><a id="link" href="#">{this.props.location}</a></li>
-                            <li id=""><a id="link" className="" href="#">{this.props.home}</a></li>
+                            <li id="link"><a  href="#">{this.props.contact}</a></li>
+                            <li id="link"><a  href="#">{this.props.vision}</a></li>
+                            <li id="link"><a  href="#">{this.props.space}</a></li>
+                            <li id="link"><a  href="#">{this.props.location}</a></li>
+                            <li id="link"><a  className="" href="../public/index.html">{this.props.home}</a></li>
                         </ul>
                     </nav>
                 </div>
