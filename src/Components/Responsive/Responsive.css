@@ -1,0 +1,28 @@
+@media (min-width: 768px){
+    .header{
+        border: 2px solid;
+    }
+    .header-inner-wrap > h3 {
+        font-size: 4.026354319180088vw;
+    }
+    /* svg */
+    .header-svg {
+        z-index: 60000;
+        position: relative;
+      }
+      .top-right-svg {
+        position: absolute;
+        right: 5.490483162518301vw;
+        top: 2.847730600292826vw;
+      }
+      .bottom-left-svg {
+        position: absolute;
+        left: 7.320644216691069vw;
+      }
+}
+
+@media (max-width: 769px){
+    .navbar{
+        display: none;
+    }
+}
