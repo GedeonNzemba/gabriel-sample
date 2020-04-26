@@ -1,7 +1,5 @@
 @media (min-width: 769px){
-  .navbar {
-    display: none;
-  }
+  
   .weaver_explanation_text-tablet{
     display: none;
   }
@@ -65,6 +63,9 @@
   
 }
 @media (max-width: 768px){
+  .navbar {
+    display: none;
+  }
   .location_svg_container{
     display: none;
   }
