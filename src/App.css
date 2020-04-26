@@ -169,6 +169,10 @@ body {
   margin-inline-start: 0px!important;
   margin-block-end: 0px!important;
 }
+#insta {
+  border: 1px solid;
+  width: 19px;
+}
 .sub-title {
   color: #001A7D;
   line-height: 1.4;

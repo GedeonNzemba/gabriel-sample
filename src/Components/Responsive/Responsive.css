@@ -56,11 +56,12 @@
     font-size: calc(16px + (20 - 16)*(100vw - 768px) / (1280 - 768));
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 879px) {
   .navbar-wrap {
     display: none;
   }
+}
+@media (max-width: 768px) {
   .location_svg_container {
     display: none;
   }
