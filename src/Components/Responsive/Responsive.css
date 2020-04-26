@@ -1,12 +1,12 @@
-@media (min-width: 769px){
-  
-  .weaver_explanation_text-tablet{
+@media (min-width: 769px) {
+  .weaver_explanation_text-tablet {
     display: none;
   }
-  .location_svg_container-tablet{
+  .location_svg_container-tablet {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   /* HEADER */
   .header-inner-wrap>h3 {
@@ -20,25 +20,22 @@
   .bottom-left-svg {
     left: 7.320644216691069vw;
   }
-  .sub-title h4{
+  .sub-title h4 {
     font-size: 1.7177159590043923vw;
   }
-
   /* INTRO  */
-  #intro-wrapper{
+  #intro-wrapper {
     border: 2px solid;
   }
-  .item > .modern_life__image{
+  .item>.modern_life__image {
     width: 50vw;
     height: 64.74820143884892vh;
   }
-  .intro-top-parag,
-  .intro-mid-parag,
-  .intro-bottom-parag {
+  .intro-top-parag, .intro-mid-parag, .intro-bottom-parag {
     word-break: break-all;
     font-size: calc(15px + (18 - 15)*(100vw - 768px) / (1280 - 768));
   }
-  .info_content h2{
+  .info_content h2 {
     font-size: 2.9992576866764276vw;
     font-weight: normal;
   }
@@ -48,28 +45,26 @@
     top: -4.316546762589928vh;
     padding: 0 5% 5% 5%;
   }
-  .quote_wrap,
-  .weaver_explanation_text,
-  .weaver_explanation_text-tablet{
+  .quote_wrap, .weaver_explanation_text, .weaver_explanation_text-tablet {
     font-size: calc(20px + (24 - 20)*(100vw - 768px) / (1280 - 768));
   }
-  .item > .sociable_weaver__image{
+  .item>.sociable_weaver__image {
     width: 50vw;
     height: 64.74820143884892vh;
   }
   .location_svg_container {
     font-size: calc(16px + (20 - 16)*(100vw - 768px) / (1280 - 768));
   }
-  
 }
-@media (max-width: 768px){
-  .navbar {
+
+@media (max-width: 768px) {
+  .navbar-wrap {
     display: none;
   }
-  .location_svg_container{
+  .location_svg_container {
     display: none;
   }
-  .location_svg img{
+  .location_svg img {
     width: calc(40vw + (20.863836017569547 - 40)*(100vw - 320px) / (768 - 320));
     height: 100%;
     padding-left: 2.4641288433382138vw;
@@ -87,7 +82,7 @@
   }
   .weaver_explanation_text {
     display: none;
-    margin-top: 0;    
+    margin-top: 0;
     width: none;
   }
   .weaver_explanation_text-tablet {
@@ -95,7 +90,7 @@
     padding-right: 2.4641288433382138vw;
     text-align: justify;
   }
-  .weaver_context_container{
+  .weaver_context_container {
     display: inline-flex;
     flex-direction: row;
     padding: 0;

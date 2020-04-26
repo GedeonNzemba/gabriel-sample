@@ -6,7 +6,6 @@ html, body {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-
 body { 
 
   scroll-behavior: smooth;
@@ -50,7 +49,7 @@ body {
   color: #001A7D;
   display: block;
   right: 0;
-  padding: 10px 10px 20px 10px;
+  padding: 0.7320644216691069vw 0.7320644216691069vw 1.4641288433382138vw 0.7320644216691069vw;
 }
 .navbar nav {
   margin: 0 0 1.45rem 1.45rem;
@@ -66,11 +65,11 @@ body {
   list-style: none;
   text-transform: capitalize;
   margin: 1.40rem .9rem 1rem 1rem;
-  letter-spacing: 2px;
+  letter-spacing:  0.14641288433382138vw;
 }
 #link > a {
   text-decoration: none!important;
-  padding: 10px 10px 20px 10px;  
+  padding: 0.7320644216691069vw 0.7320644216691069vw 1.4641288433382138vw 0.7320644216691069vw;
   font-family: inherit;
   color: #001A7D;
 }
@@ -81,9 +80,9 @@ body {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
+  height:  0.28776978417266186vh;
   display: block;
-  margin-top: 15px;
+  margin-top: 2.158273381294964vh;
   right: 0;
   transition: width .5s ease;
   -webkit-transition: width .5s ease;
@@ -1540,8 +1539,3 @@ button, input {
   }
 }
 
-
-/* RESPONSIVE DESIGN */
-@media screen and (min-width: 360px) { 
- 
-}

@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import { Toolbar } from './Components/Toolbar/Toolbar';
+import { Backdrop } from './Components/Backdrop/Backdrop';
+import { Siderdrawer } from './Components/Sidedrawer/Siderdrawer';
 import { Navbar } from './Components/Navbar';
 import { Header } from './Components/Header';
 import { SectionIntro } from './Components/Section-intro';
@@ -159,6 +162,20 @@ class App extends React.Component {
     }
   }
 
+  state = {
+    sideDrawerOpen: false, //check whether the sidedrawer is open or close
+  };
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+        return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
+
+
   
 
 
@@ -166,6 +183,24 @@ class App extends React.Component {
   
 
   render() {
+
+     // let sideDrawer;
+     let backdrop;
+     if (this.state.sideDrawerOpen) {
+         // sideDrawer = <Siderdrawer />;
+         backdrop = <Backdrop click={ this.backdropClickHandler }/>;
+     };
+
+
+
+
+
+
+
+
+
+
+
     const element = <Navbar 
     home={this.state.Home}
     location={this.state.Location}
@@ -178,6 +213,9 @@ class App extends React.Component {
 
     return (
       <div className="App">
+        <Toolbar drawerClickHandler = { this.drawerToggleClickHandler } svgD={this.state.SvgD}/> { /* once pressed then if should call a method */ } 
+        <Siderdrawer show = { this.state.sideDrawerOpen } /> {/* to show the X and the animation when the burger symbol will be clicked */}
+        {backdrop}
         <Header 
           Ngbar={element}
           Ftitle={this.state.Ftitle}
