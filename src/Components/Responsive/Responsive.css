@@ -14,31 +14,27 @@
 }
 
 @media (min-width: 900px) {
-  .intro-container-md{
+  .intro-container-md {
     display: none;
   }
   .founder-container-md {
     display: none;
   }
-  .hide-sm{
+  .hide-sm {
     display: none;
   }
- 
 }
 
 @media (min-width: 0px) and (max-width: 900px) {
-  #intro-wrapper{
+  #intro-wrapper {
     display: none;
   }
   .founder_container {
     display: none;
   }
-  .header{
+  .header {
     display: none;
   }
-  
- 
-
 }
 
 @media (min-width: 768px) {
@@ -368,8 +364,8 @@
   .img__intro-p2-md {
     --aspect-ratio: 1/0;
     /* to reduce the zoom ( the actual animation/effects )in of the image */
-    width: 332px;
-    height: 372px;
+    width: 332px!important;
+    height: 372px!important;
   }
   .intro-img-p2-md {
     --overflow: 35px;
@@ -386,13 +382,13 @@
     position: relative;
     align-items: flex-end;
     width: 448px;
-    height: 446px;
+    height: 446px!important;
   }
   .img__intro-p3-md {
     --aspect-ratio: 1/0;
     /* to reduce the zoom ( the actual animation/effects )in of the image */
-    width: 448px;
-    height: 446px;
+    width: 448px!important;
+    height: 446px!important;
   }
   .intro-img-p3-md {
     --overflow: 35px;
@@ -531,8 +527,8 @@
       height: 100%;
     }
     .img__intro-p3-md {
-      width: 48vw;
-      height: 32.5vh;
+      width: 48vw!important;
+      height: 32.5vh!important;
     }
     .intro-img-p3-md {
       --overflow: 60px;
@@ -551,194 +547,199 @@
     }
   }
 }
+
 @media (max-width: 599px) {
-  .img__intro-p1-md{
+  .img__intro-p1-md {
     height: 250px!important;
     width: 200px!important;
   }
   .intro-img-p1-md {
-      --overflow: 30px!important; /* zooming for parallex (the actual effects) issues */
+    --overflow: 30px!important;
+    /* zooming for parallex (the actual effects) issues */
   }
-  .content-intro-p1-md{
+  .content-intro-p1-md {
     height: 200px!important;
     width: 200px!important;
   }
   .hide {
-      display: none;
+    display: none;
   }
-  .intro-header-content-p1-md{
-      display: grid;
-      grid-template-rows: 1fr;
-      justify-items: start;
-      justify-content: start;
-      color: #001A7D;
-      height: fit-content;
-      padding: 0  2.5%;
-      margin-top: 3rem;
+  .intro-header-content-p1-md {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: start;
+    justify-content: start;
+    color: #001A7D;
+    height: fit-content;
+    padding: 0 2.5%;
+    margin-top: 3rem;
   }
-  .intro-header-md h3{
-      font-weight: 400;
-      text-align: left;
-      font-size: 7.4vw;
-      color: inherit;
-      line-height: 1.1;
-      padding: 0;
-      margin: 0;
+  .intro-header-md h3 {
+    font-weight: 400;
+    text-align: left;
+    font-size: 7.4vw;
+    color: inherit;
+    line-height: 1.1;
+    padding: 0;
+    margin: 0;
   }
   .intro-img-p2-md {
-      --overflow: 30px; /* zooming for parallex (the actual effects) issues */
+    --overflow: 30px;
+    /* zooming for parallex (the actual effects) issues */
   }
   .img__intro-p2-md {
-    height: 270px;
-    width: 240px;
+    height: 270px!important;
+    width: 240px!important;
   }
-  .content-intro-p2-md{
-    height: 270px;
-    width: 240px;
+  .content-intro-p2-md {
+    height: 270px!important;
+    width: 240px!important;
   }
   .intro-img-p3-md {
-      --overflow: 30px; 
+    --overflow: 30px;
   }
-  .img__intro-p3-md{
+  .img__intro-p3-md {
     /* height: 40vh;
     width: 50vw; */
-    width: 48vw;
-  height: 24.5vh;
+    width: 48vw!important;
+    height: 24.5vh!important;
   }
   .intro-weaver-p3-md h2 {
     font-size: 7.5vw;
     font-family: "Brown Regular";
     text-rendering: optimizeLegibility;
     text-indent: initial;
-}
-.intro-weaver-p3-md p{
+  }
+  .intro-weaver-p3-md p {
     font-size: 3.8vw;
     text-rendering: optimizeLegibility;
     text-indent: initial;
     text-justify: distribute-all-lines;
     text-size-adjust: 3.8vw;
-}
-
-  .member-p2-image-md{
-    margin-bottom: 5rem;
-}
-.intro-modernlife-p2-md h2{
-  font-size: 7.5vw;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  width: 100%;
-}
-.intro-modernlife-p2-md p{
-  font-size: 3.8vw;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-justify: distribute-all-lines;
-}
-article .intro-wrap-p2-md{
-  grid-row-gap: 2rem;
-}
-}
-@media (max-width: 464px){
-  .img__intro-p3-md{
-    /* height: 30vh;
-    width: 55vw; */
-    width: 58vw;
-  height: 22.5vh;
   }
-  .intro-img-p3-md {
-    --overflow: 75px; 
-}
-  article .intro-wrap-p3-md{
-    grid-row-gap: 4rem;
-}
-}
-@media (max-width: 399px){
-  .content-intro-p1-md {
-    width: 50vw;
-    height: 22.5vh;
-}
-.img__intro-p2-md{
-  width: 50vw;
-  height: 22.5vh;
-}
-}
-
-@media (width: 320px) and (height: 480px){
-  article .intro-wrap-p3-md{
+  .member-p2-image-md {
+    margin-bottom: 5rem;
+  }
+  .intro-modernlife-p2-md h2 {
+    font-size: 7.5vw;
+    text-rendering: optimizeLegibility;
+    text-indent: initial;
+    width: 100%;
+  }
+  .intro-modernlife-p2-md p {
+    font-size: 3.8vw;
+    text-rendering: optimizeLegibility;
+    text-indent: initial;
+    text-justify: distribute-all-lines;
+  }
+  article .intro-wrap-p2-md {
     grid-row-gap: 2rem;
   }
- 
-  .intro-img-p3-md {
-    --overflow: 25px; 
+}
+
+@media (max-width: 464px) {
+  .img__intro-p3-md {
+    /* height: 30vh;
+    width: 55vw; */
+    width: 58vw!important;
+    height: 22.5vh!important;
   }
-  .img__intro-p2-md{
+  .intro-img-p3-md {
+    --overflow: 75px;
+  }
+  article .intro-wrap-p3-md {
+    grid-row-gap: 4rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .content-intro-p1-md {
+    width: 50vw!important;
+    height: 22.5vh!important;
+  }
+  .img__intro-p2-md {
+    width: 50vw!important;
+    height: 22.5vh!important;
+  }
+}
+
+@media (width: 320px) and (height: 480px) {
+  article .intro-wrap-p3-md {
+    grid-row-gap: 2rem;
+  }
+  .intro-img-p3-md {
+    --overflow: 25px;
+  }
+  .img__intro-p2-md {
     width: 55vw;
     height: 35vh;
-}
-article .intro-wrap-p2-md{
-  grid-row-gap: 0rem;
-}
-.intro-modernlife-p2-md h2{
-  font-size: 8.5vw;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-}
-.intro-modernlife-p2-md p{
-  font-size: 4vw;
-  text-rendering: optimizeLegibility;
-  text-indent: initial;
-  text-justify: distribute-all-lines;
-}
-.intro-header-md h3{
+  }
+  article .intro-wrap-p2-md {
+    grid-row-gap: 0rem;
+  }
+  .intro-modernlife-p2-md h2 {
+    font-size: 8.5vw;
+    text-rendering: optimizeLegibility;
+    text-indent: initial;
+  }
+  .intro-modernlife-p2-md p {
+    font-size: 4vw;
+    text-rendering: optimizeLegibility;
+    text-indent: initial;
+    text-justify: distribute-all-lines;
+  }
+  .intro-header-md h3 {
     text-align: left;
     font-size: 7.5vw;
     line-height: 1.1;
-    padding: 0  4%;
+    padding: 0 4%;
     font-weight: 500;
-}.img__intro-p1-md{
-  width: 65vw!important;
-  height: 37.5vh!important;
-}
-.intro-img-p1-md {
-  --overflow: 65px!important; 
-}
+  }
+  .img__intro-p1-md {
+    width: 65vw!important;
+    height: 37.5vh!important;
+  }
+  .intro-img-p1-md {
+    --overflow: 65px!important;
+  }
 }
 
-
-@media (min-width: 250px){
+@media (min-width: 250px) {
   /* button */
   .toggle-button__line {
     width: 25px;
     height: 2px;
   }
 }
-  /*
+
+/*
 ================================   CURRENT PARALLEX STYLES  =============================================================== 
 */
-  @media (max-width: 899px) {
-    .item {
-      position: relative;
-      will-change: transform;
-    }
-    .item__img-wrap {
-      overflow: hidden;
-      margin: 0 auto;
-      padding-bottom: calc(100% / (var(--aspect-ratio)));
-      /* max-width: calc(100% - 2rem);   removed so that the image float right with no right margin space           */
-      will-change: transform;
-    }
-    [data-scroll] {
-      will-change: transform;
-    }
-    .item__img {
-      /* --overflow: 40px;  removed for zooming issues*/
-      height: calc(100% + (2 * var(--overflow)));
-      top: calc( -1 * var(--overflow));
-      width: 100%;
-      position: absolute;
-      background-image: var(--image);
-      background-size: cover;
-      background-position: 50% 0%;
-      will-change: transform;
-    }
+
+@media (max-width: 899px) {
+  .item {
+    position: relative;
+    will-change: transform;
   }
+  .item__img-wrap {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+    /* max-width: calc(100% - 2rem);   removed so that the image float right with no right margin space           */
+    will-change: transform;
+  }
+  [data-scroll] {
+    will-change: transform;
+  }
+  .item__img {
+    /* --overflow: 40px;  removed for zooming issues*/
+    height: calc(100% + (2 * var(--overflow)));
+    top: calc( -1 * var(--overflow));
+    width: 100%;
+    position: absolute;
+    background-image: var(--image);
+    background-size: cover;
+    background-position: 50% 0%;
+    will-change: transform;
+  }
+}
