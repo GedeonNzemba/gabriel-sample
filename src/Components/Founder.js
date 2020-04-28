@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { founder_Md } from './Founder/Founder_md';
 import  Benji_image from '../_assets/benji.png';
 import  Casper_image  from '../_assets/image_3.png';
 import {right_arrow} from '../_assets/right-arrow.png';
@@ -18,8 +19,8 @@ export class Founder extends React.Component {
             quote: false,
             profile_name_1: 'Casper Lee',
             profile_name_2: 'Benji Schaffer',
-            profile_quote_name_1: 'Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.',
-            profile_quote_name_2: "Luck? I don't know anything about luck. I've never banked on it and I'm afraid of people who do. Luck to me is something else: Hard work - and realizing what is opportunity and what isn't.",
+            profile_quote_name_1: <p style={{fontSize: '1.9033674963396778vw'}}>Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>,
+            profile_quote_name_2: <p style={{fontSize: '1.7935578330893118vw'}}>Luck? I don't know anything about luck. I've never banked on it and I'm afraid of people who do. Luck to me is something else: Hard work - and realizing what is opportunity and what isn't.</p>,
             name_1_story_paragraph: <div class="para-wrap">
                                         <p class="story_paragraph">
                                         In 2017, Caspar co-founded the <span className="color_p1_text1_a">influencer marketing platform,</span> Influencer.com and took the role of Chief Visionary Officer. That same year he became an <span class="color_p1_text1_b">ambassador</span> to The Queen’s Young Leaders and also hosted the BRIT Awards 2017 Worldwide Live Stream.
@@ -81,56 +82,139 @@ export class Founder extends React.Component {
        var profileInfo = this.state.profile_info ? this.state.name_2_story_paragraph : this.state.name_1_story_paragraph;
        var quote = this.state.quote ? this.state.profile_quote_name_2 : this.state.profile_quote_name_1;
         return(
-            <section className="founder_container">
-                <header className="founder_heading__title">
-                    <h2 className="mg-bottom">{this.state.f_heading}</h2>
-                    <h2 className="mg-top">{this.state.s_heading}</h2>
-                </header>
-                <div className="founder_profile__wrap">
-                    <div className="profile_image">
-                        <picture>
-                            <img src={image} class={this.state.toRight ? "toRight" : "toLeft"} alt="" onChange={this.imageHandler} />
-                        </picture>
-                    </div>
-                    <aside id="intro_svg_bottom_s3">
-                        {this.props.SvgF}
-                    </aside>
-                    <div className="profile_information">
-                        <div className="profile_name">
-                            <h5>
-                                {profileName}
-                                <hr />
-                            </h5>
+            <section className="founder">
+                <div className="founder_container">
+                    <header className="founder_heading__title">
+                        <h2 className="mg-bottom">{this.state.f_heading}</h2>
+                        <h2 className="mg-top">{this.state.s_heading}</h2>
+                    </header>
+                    <div className="founder_profile__wrap">
+                        <div className="profile_image">
+                            <picture>
+                                <img src={image} class={this.state.toRight ? "toRight" : "toLeft"} alt=""z onChange={this.imageHandler} />
+                            </picture>
                         </div>
-                        <div className="profile_quote">
-                            <div>
-                                <blockquote>
-                                    {quote}
-                                    <footer>
-                                        <cite>
-                                            {profileName}
+                        <aside id="intro_svg_bottom_s3">
+                            {this.props.SvgF}
+                        </aside>
+                        <div className="profile_information">
+                            <div className="profile_name">
+                                <h5>
+                                    {profileName}
+                                    <hr />
+                                </h5>
+                            </div>
+                            <div className="profile_quote">
+                                <div>
+                                    <blockquote>
+                                        {quote}
+                                        <footer>
+                                            <cite style={{fontSize: '1.7935578330893118vw'}}>
+                                                {profileName}
+                                            </cite>
+                                        </footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div className="profile_storyline">
+                                <p  class={this.state.fadeIn ? "fade-in" : "fade-out"}>{profileInfo}</p>
+                            </div>
+                        </div>
+                        <div className="button" onClick={this.imageHandler}>
+                        <div className="click_wrap">
+                            <div className="btn_text">
+                                {/* will return the name of the current state, by tracking the condition ' ? ',  ' : '*/}
+                                View {profileName}
+                            </div>
+                            <div className="_icon">
+                                {/* font-awesome arrow-right */}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+
+
+                {/* FOUNDER */}
+                <article className="founder-container-md">
+                    <section className="founder-header-container-md">
+                        <header className="founder-header-md">
+                            Meet The People Behind Proper Living
+                        </header>
+                    </section>
+                    <section className="founder-member-p1-md">
+                        <aside className="member-p1-image-md">
+                            {/* PARALLEX IMAGE */}
+                            <div className="content content-img-member-p1-md">
+                                <div class="item">
+                                    <div class="item__img-wrap img__member-p1-md">
+                                        <div class="item__img item__img--t2 member-img-p1-md"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* PARALLEX IMAGE */}
+                        </aside>
+                        <div className="member-p1-info-md">
+                            <header className="member-p1-md">
+                                <div className="member-p1-name-md">Casper Lee</div>
+                                <hr />
+                                <blockquote id="blockquote">
+                                    Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
+                                    <footer id="blockfooter">
+                                        <cite id="cite">
+                                            Casper Lee
                                         </cite>
                                     </footer>
                                 </blockquote>
+                            </header>
+                        </div>
+                    </section>
+                    <section className="founder-member-p2-md">
+                        <div className="member-p2-wrap-md">
+                            <aside className="member-p2-image-md">
+                                {/* PARALLEX IMAGE */}
+                                <div className="content content-img-member-p2-md">
+                                    <div class="item member-p2-item">
+                                        <div class="item__img-wrap img__member-p2-md">
+                                            <div class="item__img item__img--t2 member-img-p2-md"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* PARALLEX IMAGE */}
+                            </aside>
+                            <div className="member-p2-info-md">
+                                <header className="member-p2-md">
+                                    <div className="member-p2-name-md">Benji Schaffer</div>
+                                    <hr />
+                                    <blockquote>
+                                        Luck? I don't know anything about luck. I've never banked on it and I'm afraid of people who do. Luck to me is something else: Hard work - and realizing what is opportunity and what isn't.
+                                        <footer>
+                                            <cite>
+                                                Benji Schaffer
+                                            </cite>
+                                        </footer>
+                                    </blockquote>
+                                </header>
                             </div>
                         </div>
-                        <div className="profile_storyline">
-                            <p  class={this.state.fadeIn ? "fade-in" : "fade-out"}>{profileInfo}</p>
-                        </div>
-                    </div>
-                    <div className="button" onClick={this.imageHandler}>
-                    <div className="click_wrap">
-                        <div className="btn_text">
-                            {/* will return the name of the current state, by tracking the condition ' ? ',  ' : '*/}
-                            View {profileName}
-                        </div>
-                        <div className="_icon">
-                            {/* font-awesome arrow-right */}
-                        </div>
-                    </div>
-                </div>
-                </div>
+                    </section>
+                </article>
+
+
+
+
+
+
+
+
+
+
+
             </section>
+            
             
         );
     }

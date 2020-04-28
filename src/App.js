@@ -298,6 +298,7 @@ class App extends React.Component {
         SvgG={this.state.SvgG}
         SvF_contact={this.state.SvF_contact}
         />
+        
       </div>
     );
   }

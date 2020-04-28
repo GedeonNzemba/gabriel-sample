@@ -6,6 +6,7 @@ import location_svg from '../_assets/weaver_brand.png';
 export class SectionIntro extends React.Component {
   render() {
     return (
+      <div className="intro">
       <section id="intro-wrapper">
           <div className="intro_container">
             <div className="intro_inner_container">
@@ -131,6 +132,93 @@ export class SectionIntro extends React.Component {
             </div>
           </aside>
       </section>
+
+
+
+
+
+
+
+
+
+
+                  <article className="intro-container-md">
+                    <section className="intro-inner-content-md intro-wrap-p1-md">
+                        <aside className="intro-image-content-p1-md">
+                            {/* PARALLEX IMAGE */}
+                            <div className="content content-intro-p1-md">
+                                <div class="item">
+                                    <div class="item__img-wrap img__intro-p1-md">
+                                        <div class="item__img item__img--t2 intro-img-p1-md"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* PARALLEX IMAGE */}
+                        </aside>
+                        <div className="intro-header-content-p1-md">
+                            <header className="intro-header-md">
+                                <h3 className="hide">Modern Communities, Designed<br /> For Young Adults.</h3>
+                                <h3 className="hide-sm">Modern Communities, Designed For Young Adults.</h3>
+                            </header>
+                        </div>
+                    </section>
+                    <section className="intro-inner-content-md intro-wrap-p2-md">
+                        <aside className="intro-image-content-p2-md">
+                            {/* PARALLEX IMAGE */}
+                            <div className="content content-intro-p2-md">
+                                <div class="item">
+                                    <div class="item__img-wrap img__intro-p2-md">
+                                        <div class="item__img item__img--t2 intro-img-p2-md"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* PARALLEX IMAGE */}
+                        </aside>
+                        <div className="intro-header-content-p2-md">
+                            <div className="intro-modernlife-p2-md">
+                                <h2 className="hide">Modern Life, Lived Proper.</h2>
+                                <h2 className="hide-sm">Modern Life, Lived<br /> Proper.</h2>
+                                <div className="modernlife-text-md">
+                                    <p>
+                                        At Proper Living we believe that we can make a 
+                                        significant improvement to the lives of thousands of
+                                        young people through <span>modern</span> design 
+                                        and by creating communities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="intro-inner-content-md intro-wrap-p3-md">
+                        <aside className="intro-image-content-p3-md">
+                            {/* PARALLEX IMAGE */}
+                            <div className="content content-intro-p3-md">
+                                <div class="item">
+                                    <div class="item__img-wrap img__intro-p3-md">
+                                        <div class="item__img item__img--t2 intro-img-p3-md"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* PARALLEX IMAGE */}
+                        </aside>
+                        <div className="intro-header-content-p3-md">
+                            <div className="intro-weaver-p3-md">
+                                <h2>The Sociable Weaver.</h2>
+                                <div className="weaver-text-md">
+                                    <p> This beautiful bird <span>inspired</span> our logo and impacted 
+                                        many elements of our brand. They're a species of bird
+                                        in the weaver family that is endemic to <span>Southern</span> {" "}
+                                        <span>Africa</span>.
+                                        it's found in South Africa, Namibia and
+                                        Botswana, but their range is cantered within the.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+    </div>
     );
   }
 }
