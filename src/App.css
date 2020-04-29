@@ -4,48 +4,19 @@ html, body {
 }
 ::-webkit-scrollbar {
     width: 0px;
+    height: 100%, -webkit-fill-available;
     background: transparent; /* make scrollbar transparent */
 }
 body { 
-
+  height: 1360.5vh!important;
+  max-height: -webkit-fill-available;
+  -webkit-font-smoothing: auto;
   scroll-behavior: smooth;
 }
 
 .App {
   text-align: center;
   background: #E5E8E8;
-}
-.ml11 {
-  font-weight: 700;
-  font-size: 3.5em;
-}
-
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-}
-
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 3px;
-  background-color: #fff;
-  transform-origin: 0 50%;
-}
-
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
-}
-
-.ml11 .letter {
-  display: inline-block;
-  line-height: 1em;
 }
 [data-scroll] {
 	will-change: transform;
@@ -881,9 +852,9 @@ blockquote #blockquote:after {
 }
 .security_info_content > h2 {
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: calc(31px + (38 - 31)*(100vw - 768px) / (1280 - 768))!important;
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   padding: 0;
   margin: 0 0 1.45rem;
   color: inherit;
@@ -1311,8 +1282,8 @@ span {
   background-image: url(./_assets/weaver_brand.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 110px;
-  height: 50%;
+  width: 160px;
+  height: 100px;
   max-width: 100%;
   max-height: 100%;
   
@@ -1321,9 +1292,9 @@ span {
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 50%;
   margin-top: 24%;
-  
+  display: flex;
+  justify-content: center;
 }
 .secure_generator__image{
   --image: url(./_assets/image_9.png);
@@ -1532,11 +1503,15 @@ span {
 */
 .contact_form_container {
   margin-top: -30px;
-  border: none;
   background-color: #001A7D;
   border-top: 1px solid #001A7D;
-  height: 100vh;
-
+  height: 86.4vh;
+  position: relative;
+}
+.footer_container {
+  position: absolute;
+  bottom: 0;
+  width: -moz-available, -webkit-fill-available;
 }
 .contact_us {
   margin-top: 8%;
@@ -1656,7 +1631,6 @@ button, input {
   padding: 15px 100px 10px 50px;
   height: 5vh;
   position: relative;
-  bottom: -85px;
 }
 
 
@@ -1796,6 +1770,9 @@ button, input {
   left: 65%;
   top: 20%;
   transform: rotate(-10deg);
+}
+.footer_container > footer{
+  bottom: 0;
 }
 @keyframes colorChange {
   0%{fill:#001A7D}

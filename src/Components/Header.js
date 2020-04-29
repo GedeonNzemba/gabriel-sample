@@ -1,6 +1,4 @@
 import React from 'react';
-import { App } from '../App.js';
-import { Navbar } from './Navbar';
 import '../App.css';
 import './Responsive/Responsive.css';
 

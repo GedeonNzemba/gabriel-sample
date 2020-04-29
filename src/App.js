@@ -204,7 +204,7 @@ class App extends React.Component {
         <Toolbar drawerClickHandler = { this.drawerToggleClickHandler } svgD={this.state.SvgD}/> { /* once pressed then if should call a method */ } 
         <Siderdrawer show = { this.state.sideDrawerOpen } /> {/* to show the X and the animation when the burger symbol will be clicked */}
         {backdrop}
-        
+    
         <Header 
           Ngbar={element}
           Ftitle={this.state.Ftitle}

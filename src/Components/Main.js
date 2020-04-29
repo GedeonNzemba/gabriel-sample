@@ -59,7 +59,7 @@ export class Main extends React.Component {
           <div className="cctv_camera_inner_container">
             {/* right content */}
             <div className="cctv_camera_info_content">
-              <h2>{this.props.securityHeading}</h2>
+              <h2>{this.props.cctv_title}</h2>
               <p className="cctv_camera_bottom_parag paragraph">
                 Common and external spaces within and nearby the premises are {" "}
                 <span>{this.props._protected}</span> {" "} by state of the art{" "}
@@ -214,7 +214,7 @@ export class Main extends React.Component {
           <div className="secure_generator_inner_container">
             {/* right content */}
             <div className="secure_generator_info_content">
-              <h2>{this.props.digital_name}</h2>
+              <h2>{this.props.secure_generator_title}</h2>
               <p className="secure_generator_bottom_parag paragraph">
                 We’ve ensured that there is a <span>{this.props._secure}</span>{" "}
                 to power <span>{this.props._secure}</span>during any power
