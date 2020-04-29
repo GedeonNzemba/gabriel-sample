@@ -1511,7 +1511,7 @@ span {
 .footer_container {
   position: absolute;
   bottom: 0;
-  width: -moz-available, -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 .contact_us {
   margin-top: 8%;

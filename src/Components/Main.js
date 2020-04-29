@@ -330,6 +330,7 @@ export class Main extends React.Component {
                         name="firstname"
                         id="firstName"
                         placeholder="First Name"
+                    
                       ></input>
                       <input
                         type="text"
