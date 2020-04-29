@@ -55,9 +55,7 @@
     font-weight: lighter;
   }
   /* INTRO  */
-  #intro-wrapper {
-    border: 2px solid;
-  }
+ 
   .item>.modern_life__image {
     width: 50vw;
     height: 64.74820143884892vh;
