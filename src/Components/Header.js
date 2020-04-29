@@ -3,6 +3,7 @@ import { App } from '../App.js';
 import { Navbar } from './Navbar';
 import '../App.css';
 import './Responsive/Responsive.css';
+
 export class Header extends React.Component {
     // constructor(props){
     //     super(props);
@@ -39,8 +40,15 @@ export class Header extends React.Component {
                         <figure id="facebook">{this.props.svgC}</figure>
                         <figure id="web-logo">{this.props.svgD}</figure>
                     </div>
-                    <div className="sub-title">
-                        <h4>Student Accomodation</h4>
+                    <div className="sub-title" id="fragement_1">
+                        <h4 className="ml3">
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters">
+                                    Student Accomodation
+                                </span>
+                            </span>
+                        </h4>
                     </div>
                 </div>
             </div>

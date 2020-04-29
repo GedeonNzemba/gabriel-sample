@@ -4,6 +4,7 @@ import { founder_Md } from './Founder/Founder_md';
 import  Benji_image from '../_assets/benji.png';
 import  Casper_image  from '../_assets/image_3.png';
 import {right_arrow} from '../_assets/right-arrow.png';
+    
 
 export class Founder extends React.Component {
     constructor(props){
@@ -89,11 +90,11 @@ export class Founder extends React.Component {
                         <h2 className="mg-top">{this.state.s_heading}</h2>
                     </header>
                     <div className="founder_profile__wrap">
-                        <div className="profile_image">
-                            <picture>
-                                <img src={image} class={this.state.toRight ? "toRight" : "toLeft"} alt=""z onChange={this.imageHandler} />
-                            </picture>
-                        </div>
+                            <div className="profile_image">
+                                <picture>
+                                    <img src={image} class={this.state.toRight ? "image" : "image"} alt="" onChange={this.imageHandler} />
+                                </picture>
+                            </div>
                         <aside id="intro_svg_bottom_s3">
                             {this.props.SvgF}
                         </aside>

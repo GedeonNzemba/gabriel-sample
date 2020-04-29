@@ -22,7 +22,7 @@ class App extends React.Component {
       Vision: 'Vision',
       Contact: 'Contact',
       // HEADER
-      Ftitle: 'We design modern communities',
+      Ftitle: <span>We design {" "} <span id="fragement_1">modern</span> {" "} communities</span>,
       Stitle: 'that advance the wellbeing of young',
       Ttitle: 'adults',
       SvgA: <svg xmlns="http://www.w3.org/2000/svg" width={106} height="17.18" viewBox="0 0 106 17.18">
@@ -99,7 +99,7 @@ class App extends React.Component {
       rational_guards_title: 'Rotational Guards',
       _exceptional_security: 'exceptional security',
       _high_level: 'high level',
-      _24h7: 24/7,
+      _24h7: '24/7',
       _guards_quote: 'High-level qualifications in line with PSIRA registration policies',
       // biometric system
       biometric_title: 'Biometric System',
@@ -188,17 +188,7 @@ class App extends React.Component {
          // sideDrawer = <Siderdrawer />;
          backdrop = <Backdrop click={ this.backdropClickHandler }/>;
      };
-
-
-
-
-
-
-
-
-
-
-
+     
     const element = <Navbar 
     home={this.state.Home}
     location={this.state.Location}
@@ -214,6 +204,7 @@ class App extends React.Component {
         <Toolbar drawerClickHandler = { this.drawerToggleClickHandler } svgD={this.state.SvgD}/> { /* once pressed then if should call a method */ } 
         <Siderdrawer show = { this.state.sideDrawerOpen } /> {/* to show the X and the animation when the burger symbol will be clicked */}
         {backdrop}
+        
         <Header 
           Ngbar={element}
           Ftitle={this.state.Ftitle}
@@ -298,8 +289,7 @@ class App extends React.Component {
         SvgG={this.state.SvgG}
         SvF_contact={this.state.SvF_contact}
         />
-        
-      </div>
+        </div>
     );
   }
 }

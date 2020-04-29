@@ -51,7 +51,8 @@
     left: 7.320644216691069vw;
   }
   .sub-title h4 {
-    font-size: 1.7177159590043923vw;
+    font-size: larger;
+    font-weight: lighter;
   }
   /* INTRO  */
   #intro-wrapper {
@@ -711,6 +712,45 @@
     height: 2px;
   }
 }
+/* MAIN QUERY */
+@media (min-width: 768px){
+   .size{
+    width:  calc(320px + (683 - 320)*(100vw - 768px) / (1280 - 768))!important;
+    height:  calc(320px + (450 - 320)*(100vw - 768px) / (1280 - 768))!important;
+  }
+  .security_info_content h2,
+.cctv_camera_info_content h2,
+.secure_generator_info_content h2,
+.swift_app_info_content h2{
+  font-size: calc(31px + (40 - 31)*(100vw - 768px) / (1280 - 768))!important;
+  padding-top: 0;
+  justify-content: flex-end;
+}
+.security_info_content,
+.cctv_camera_info_content,
+.secure_generator_info_content,
+.swift_app_info_content{
+  padding-top: 0;
+}
+.rational_guards_info_content{
+  padding-top: 0;
+}
+.biometric_system_info_content{
+  padding-top: 0;
+}
+.digital_guest_info_content{
+  padding-top: 0;
+}
+}
+
+
+
+
+
+
+
+
+
 
 /*
 ================================   CURRENT PARALLEX STYLES  =============================================================== 

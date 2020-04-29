@@ -32,7 +32,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap encrupted_security__image">
+                  <div className="item__img-wrap encrupted_security__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -61,12 +61,12 @@ export class Main extends React.Component {
             <div className="cctv_camera_info_content">
               <h2>{this.props.securityHeading}</h2>
               <p className="cctv_camera_bottom_parag paragraph">
-                Common and external spaces within and nearby the premises are
-                <span>{this.props._protected}</span> by state of the art{" "}
+                Common and external spaces within and nearby the premises are {" "}
+                <span>{this.props._protected}</span> {" "} by state of the art{" "}
                 <span>{this.props._surveillance}</span> cameras. We’ve gone a
                 step further by ensuring streams are{" "}
                 <span>{this.props._monitored}</span> by a{" "}
-                <span>{this.props._specialist}</span>
+                <span>{this.props._specialist}</span> {" "}
                 monitoring team who will immediately dispatch resources if any
                 suspicious activity occurs.
               </p>
@@ -75,7 +75,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap inhouse_security__image">
+                  <div className="item__img-wrap inhouse_security__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -108,8 +108,8 @@ export class Main extends React.Component {
                 team and demand the highest standards. All guards must have{" "}
                 <span>{this.props._high_level}</span> qualifications in line
                 with PSIRA registration policies. The guards are on{" "}
-                <span>{this.props._24h7}</span>
-                rotation and are well connected to the rest of our security
+                <span>{this.props._24h7} </span>
+                {" "} rotation and are well connected to the rest of our security
                 infrastructure.
               </p>
             </div>
@@ -117,7 +117,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap psira_guards__image">
+                  <div className="item__img-wrap psira_guards__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap biometric_system__image">
+                  <div className="item__img-wrap biometric_system__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -193,7 +193,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap digital_guest__image">
+                  <div className="item__img-wrap digital_guest__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap secure_generator__image">
+                  <div className="item__img-wrap secure_generator__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -299,7 +299,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item swift_item">
-                  <div className="item__img-wrap swift_app__image">
+                  <div className="item__img-wrap swift_app__image size">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
