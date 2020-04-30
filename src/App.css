@@ -8,13 +8,14 @@ html, body {
     background: transparent; /* make scrollbar transparent */
 }
 body { 
-  height: 1360.5vh!important;
-  max-height: -webkit-fill-available;
+  height: 100%;
   -webkit-font-smoothing: auto;
   scroll-behavior: smooth;
 }
 
 .App {
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
   background: #E5E8E8;
 }

@@ -174,12 +174,6 @@ class App extends React.Component {
 
 
 
-  
-
-
-
-  
-
   render() {
 
      // let sideDrawer;
@@ -218,6 +212,7 @@ class App extends React.Component {
           svgF={this.state.SvgF}
           svgG={this.state.SvgG}
         />
+      
         <SectionIntro 
         quote={this.state.intro_quote}
         modern={this.state.modern}

@@ -722,7 +722,7 @@
 .secure_generator_info_content h2,
 .swift_app_info_content h2{
   font-size: calc(31px + (40 - 31)*(100vw - 768px) / (1280 - 768))!important;
-  padding-top: 0;
+  padding-top: calc(0% + (8 - 0%)*(100vw - 768px) / (1280 - 768));
   justify-content: flex-end;
 }
 .paragraph{
@@ -735,13 +735,11 @@
 .secure_generator_info_content{
   padding-top: calc(15% + (8 - 15)*(100vw - 768px) / (1280 - 768));
 }
-.security_info_content{
-  padding-top: 0;
-}
+
 /* inner quote */
 .cctv_camera_inspiration_quote{
   position: relative;
-  top: 0px;
+  top: calc(0px + ((-30) - 0)*(100vw - 768px) / (1366 - 768));
 }
 .cctv_camera_quote_wrap,
 .rational_guards_quote_wrap,
@@ -749,7 +747,7 @@
 .digital_guest_quote_wrap,
 .secure_generator_quote_wrap{
   position: absolute;
-  top: -60px;
+  top: calc(0px + ((30) - 0)*(100vw - 768px) / (1366 - 768));
 }
 /* quotes */
 .secure_generator_inspiration_quote,
@@ -759,8 +757,8 @@
 .security_inspiration_quote,
 .digital_guest_inspiration_quote{
   position: relative;
-  top: 0px;
-  height: 0;
+  top: calc(0px + ((-30) - 0)*(100vw - 768px) / (1366 - 768));
+  height: 30vh;
 }
 /* main parents */
 .security_container,
@@ -788,7 +786,9 @@
 }
 }
 
-@media (max-width: 768px){}
+@media (max-width: 768px){
+ 
+}
 @media (max-width: 420px){}
 
 
