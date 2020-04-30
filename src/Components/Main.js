@@ -3,6 +3,10 @@ import "../App.css";
 import './Responsive/Responsive.css';
 
 export class Main extends React.Component {
+
+  //The lifecycle willmount component to be used to pass ref. ( Since the autoFocus is not supported in react)
+  
+
   render() {
     return (
       <main id="main_wrapper">
@@ -323,20 +327,23 @@ export class Main extends React.Component {
               <div className="form_wrap">
                 <div className="form_left">
                   <h1>Have Q's? We have the A's!</h1>
-                  <form method="post" action="#" encType={FormData}>
+                  <form method="get" action="./form.php" encType={FormData} target="_blank" >
                     <section className="getNames">
                       <input
                         type="text"
                         name="firstname"
                         id="firstName"
                         placeholder="First Name"
-                    
+                        autoComplete='true'
+                        required
                       ></input>
                       <input
                         type="text"
                         name="lastname"
                         id="secondName"
                         placeholder="Last Name"
+                        autoComplete='true'
+                        required
                       ></input>
                     </section>
                     <section className="getEmail">
@@ -345,6 +352,7 @@ export class Main extends React.Component {
                         name="email"
                         placeholder="Email Address"
                         id="email"
+                        required
                       ></input>
                     </section>
                     <section className="textarea">
@@ -353,10 +361,11 @@ export class Main extends React.Component {
                         name="message"
                         placeholder="Your Message"
                         id="textarea"
+                        required
                       ></textarea>
                     </section>
                     <section className="submit_button">
-                      <button type="button" id="submit_button">
+                      <button type="submit" name="submit"  id="submit_button" formAction="contactForm" formTarget="_blank">
                         Send
                       </button>
                     </section>

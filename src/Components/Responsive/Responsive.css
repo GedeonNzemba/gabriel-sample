@@ -728,6 +728,53 @@
 .paragraph{
   font-size: calc(15px + (18 - 15)*(100vw - 768px) / (1280 - 768));
 }
+.digital_guest_info_content,
+.cctv_camera_info_content{
+  padding-top: calc(0% + (8 - 0)*(100vw - 768px) / (1280 - 768));
+}
+.secure_generator_info_content{
+  padding-top: calc(15% + (8 - 15)*(100vw - 768px) / (1280 - 768));
+}
+.security_info_content{
+  padding-top: 0;
+}
+/* inner quote */
+.cctv_camera_inspiration_quote{
+  position: relative;
+  top: 0px;
+}
+.cctv_camera_quote_wrap,
+.rational_guards_quote_wrap,
+.biometric_system_quote_wrap,
+.digital_guest_quote_wrap,
+.secure_generator_quote_wrap{
+  position: absolute;
+  top: -60px;
+}
+/* quotes */
+.secure_generator_inspiration_quote,
+.biometric_system_inspiration_quote,
+.rational_guards_inspiration_quote,
+.cctv_camera_inspiration_quote,
+.security_inspiration_quote,
+.digital_guest_inspiration_quote{
+  position: relative;
+  top: 0px;
+  height: 0;
+}
+/* main parents */
+.security_container,
+.cctv_camera_container,
+.rational_guards_container,
+.biometric_system_container,
+.digital_guest,
+.secure_generator_container,
+.swift_app_container{
+  margin-top: 10em;
+}
+
+
+
 .security_info_content,
 .cctv_camera_info_content,
 .secure_generator_info_content,
@@ -740,6 +787,10 @@
   padding-top: 0;
 }
 }
+
+@media (max-width: 768px){}
+@media (max-width: 420px){}
+
 
 
 
