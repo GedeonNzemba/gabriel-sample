@@ -10,7 +10,7 @@ import './Slide_swift.css'
 import Slider from 'react-slick';
 
 
-export class slide_swift extends React.Component {
+export class slideswift extends React.Component {
     render() {
       var settings = {
         dots: true,
@@ -49,7 +49,6 @@ export class slide_swift extends React.Component {
       };
       return (
         <div className="paragraph_wrap">
-          <h2> Responsive Why it is not working</h2>
           <Slider {...settings}>
             <div className="paragraph_slide">
               <h3 style={{textAlign: 'left'}}>Incident Reporting</h3>
@@ -85,4 +84,4 @@ export class slide_swift extends React.Component {
     }
   }
 
-  export default slide_swift;
+  export default slideswift;

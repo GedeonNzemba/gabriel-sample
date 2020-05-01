@@ -47,7 +47,7 @@ export class Slide extends React.Component{
             speed: 500,
             lazyLoad: true,
             slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             autoplay: true,
             className: 'slides'
 

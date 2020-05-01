@@ -1792,3 +1792,8 @@ button, input {
   }
 }
 
+@media (min-width: 768px){
+.slider_1, .slider_2{
+  display: none;
+}
+}

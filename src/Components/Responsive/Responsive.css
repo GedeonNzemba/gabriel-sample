@@ -811,6 +811,16 @@
       --overflow: 15px;
   }
   }
+  @media (max-width: 767px){
+    .security_container,
+.cctv_camera_container,
+.rational_guards_container,
+.biometric_system_container,
+.digital_guest,
+.secure_generator_container{
+  display: none;
+}
+  }
  
 
 
