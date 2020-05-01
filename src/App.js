@@ -186,24 +186,36 @@ class App extends React.Component {
          backdrop = <Backdrop click={ this.backdropClickHandler }/>;
      };
      
-    const element = <Navbar 
-    home={this.state.Home}
-    location={this.state.Location}
-    space={this.state.Spaces}
-    vision={this.state.Vision}
-    contact={this.state.Contact}
-    svgD={this.state.SvgD}
-    />
+    // const element = <Navbar 
+    // home={this.state.Home}
+    // location={this.state.Location}
+    // space={this.state.Spaces}
+    // vision={this.state.Vision}
+    // contact={this.state.Contact}
+    // svgD={this.state.SvgD}
+    // />
     
 
     return (
-      <div className="App">
+      <div className="App" data-scroll>
+        <div className="navb">
+        <Navbar 
+          home={this.state.Home}
+          location={this.state.Location}
+          space={this.state.Spaces}
+          vision={this.state.Vision}
+          contact={this.state.Contact}
+          svgD={this.state.SvgD}
+        />
+        </div>
         <Toolbar drawerClickHandler = { this.drawerToggleClickHandler } svgD={this.state.SvgD}/> { /* once pressed then if should call a method */ } 
         <Siderdrawer show = { this.state.sideDrawerOpen } /> {/* to show the X and the animation when the burger symbol will be clicked */}
         {backdrop}
-    
+
+        
+
         <Header 
-          Ngbar={element}
+          // Ngbar={element}
           Ftitle={this.state.Ftitle}
           Stitle={this.state.Stitle}
           Ttitle={this.state.Ttitle}
@@ -216,84 +228,84 @@ class App extends React.Component {
           svgG={this.state.SvgG}
         />
       
+        <div>
         <SectionIntro 
-        quote={this.state.intro_quote}
-        modern={this.state.modern}
-        special={this.state.special}
-        flyDown={this.state.flyDown}
-        introHeading={this.state.intro_heading}
-        introHeadingWeaver={this.state.intro_heading_weaver}
-        inspired={this.state.inspired}
-        SA={this.state.SA}
-        trust={this.state.trust}
-        weaverQuote={this.state.weaver_quote}
-        SvgF={this.state.SvgF}
-        SvgG={this.state.SvgG}
+          quote={this.state.intro_quote}
+          modern={this.state.modern}
+          special={this.state.special}
+          flyDown={this.state.flyDown}
+          introHeading={this.state.intro_heading}
+          introHeadingWeaver={this.state.intro_heading_weaver}
+          inspired={this.state.inspired}
+          SA={this.state.SA}
+          trust={this.state.trust}
+          weaverQuote={this.state.weaver_quote}
+          SvgF={this.state.SvgF}
+          SvgG={this.state.SvgG}
         />
         <Founder 
-        SvgF={this.state.SvgF}
-        SvgG={this.state.SvgG}
+          SvgF={this.state.SvgF}
+          SvgG={this.state.SvgG}
         />
-        
         <div className="slider_1">
         <Slide />
         </div>
         <div className="slider_2">
         <Sliderswift />
         </div>
-
         <Main 
-        securityHeading={this.state.securityHeading}
-        _security={this.state._security}
-        _seriously={this.state._seriously}
-        _rapid_response={this.state._rapid_response}
-        _moving_out={this.state._moving_out}
-        _safe={this.state._safe}
-        security_quote={this.state.security_quote}
-        cctv_title={this.state.cctv_title}
-        _protected={this.state._protected}
-        _surveillance ={this.state._surveillance}
-        _monitored={this.state._monitored}
-        _specialist={this.state._specialist}
-        cctv_quote={this.state.cctv_quote}
-        rational_guards_title={this.state.rational_guards_title}
-        _exceptional_security={this.state._exceptional_security}
-        _high_level={this.state._high_level}
-        _24h7={this.state._24h7}
-        _guards_quote={this.state._guards_quote}
-        biometric_title={this.state.biometric_title}
-        _biometric={this.state._biometric}
-        _fingerprints={this.state._fingerprints}
-        _no_more={this.state._no_more}
-        _keys={this.state._keys}
-        _always={this.state._always}
-        biometric_quote={this.state.biometric_quote}
-        digital_name={this.state.digital_name}
-        _sign_in={this.state._sign_in}
-        _visit={this.state._visit}
-        _informing={this.state._informating}
-        _track={this.state._track}
-        digital_quote={this.state.digital_quote}
-        secure_generator_title={this.state.secure_generator_title}
-        _secure={this.state._secure}
-        _necessities={this.state._necessities}
-        secure_generator_quote={this.state.secure_generator_quote}
-        swift_app_title={this.state.swift_app_title}
-        swift_app_quote={this.state.swift_app_quote}
-        incident={this.state.incident}
-        function={this.state.function}
-        SOS={this.state.SOS}
-        Message={this.state.Message}
-        incident_reporting={this.state.incident_reporting}
-        watchMe_function={this.state.watchMe_function}
-        emergency={this.state.emergency}
-        message_management={this.state.message_management}
-        instagram={this.state.instagram}
-        facebook={this.state.facebook}
-        SvgF={this.state.SvgF}
-        SvgG={this.state.SvgG}
-        SvF_contact={this.state.SvF_contact}
+          securityHeading={this.state.securityHeading}
+          _security={this.state._security}
+          _seriously={this.state._seriously}
+          _rapid_response={this.state._rapid_response}
+          _moving_out={this.state._moving_out}
+          _safe={this.state._safe}
+          security_quote={this.state.security_quote}
+          cctv_title={this.state.cctv_title}
+          _protected={this.state._protected}
+          _surveillance ={this.state._surveillance}
+          _monitored={this.state._monitored}
+          _specialist={this.state._specialist}
+          cctv_quote={this.state.cctv_quote}
+          rational_guards_title={this.state.rational_guards_title}
+          _exceptional_security={this.state._exceptional_security}
+          _high_level={this.state._high_level}
+          _24h7={this.state._24h7}
+          _guards_quote={this.state._guards_quote}
+          biometric_title={this.state.biometric_title}
+          _biometric={this.state._biometric}
+          _fingerprints={this.state._fingerprints}
+          _no_more={this.state._no_more}
+          _keys={this.state._keys}
+          _always={this.state._always}
+          biometric_quote={this.state.biometric_quote}
+          digital_name={this.state.digital_name}
+          _sign_in={this.state._sign_in}
+          _visit={this.state._visit}
+          _informing={this.state._informating}
+          _track={this.state._track}
+          digital_quote={this.state.digital_quote}
+          secure_generator_title={this.state.secure_generator_title}
+          _secure={this.state._secure}
+          _necessities={this.state._necessities}
+          secure_generator_quote={this.state.secure_generator_quote}
+          swift_app_title={this.state.swift_app_title}
+          swift_app_quote={this.state.swift_app_quote}
+          incident={this.state.incident}
+          function={this.state.function}
+          SOS={this.state.SOS}
+          Message={this.state.Message}
+          incident_reporting={this.state.incident_reporting}
+          watchMe_function={this.state.watchMe_function}
+          emergency={this.state.emergency}
+          message_management={this.state.message_management}
+          instagram={this.state.instagram}
+          facebook={this.state.facebook}
+          SvgF={this.state.SvgF}
+          SvgG={this.state.SvgG}
+          SvF_contact={this.state.SvF_contact}
         />
+        </div>
         
         </div>
     );

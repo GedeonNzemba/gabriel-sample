@@ -13,9 +13,9 @@ export class Header extends React.Component {
         return(
             <div className="header">
                 {/* NAVBAR */}
-                <div className="navigation-bar">
+                {/* <div className="navigation-bar">
                     {this.props.Ngbar}
-                </div>
+                </div> */}
                 {/* SVG */}
                 <div className="header-svg">
                     <div className="top-right-svg">{this.props.svgF}</div>

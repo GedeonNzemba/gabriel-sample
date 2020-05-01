@@ -1,23 +1,42 @@
 .side-drawer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 330px;
+    max-width: 90%;
     height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #3b4500;
+    box-sizing: border-box;
+    /* height: 100%;
     background: #3B4500;
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: fixed!important;
     top: 0;
     left: 0;
     width: 70%;
     max-width: 400px;
-    z-index: 200;
+    z-index: 200; */
      transform: translateX(-100%);/* move it to the left by it's full width */
     transition: transform 0.3s ease-out; /* animation: slide from the left */
 }
+.side-drawer > * {
+
+}
 /* inside the side nav  */
 .side-drawer ul {
-    height: 100%;
     list-style: none;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: relative;
+    padding-top: 50%;
+    padding-left: 15%;
 }
 /* X Animation for the burger when it is clicked  */
 .side-drawer.open {
@@ -35,4 +54,16 @@
 .side-drawer a:hover,
 .side-drawer a:active {
      color: #fa923f;
+}
+#side-drawer__hr{
+    width: 250px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 25rem;
+    padding-left: 15%;
 }

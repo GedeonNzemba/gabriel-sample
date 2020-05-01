@@ -1,14 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+ 
 }
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 100%, -webkit-fill-available;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent; /* make scrollbar transparent*/
 }
 body { 
-  height: 100%;
   -webkit-font-smoothing: auto;
   scroll-behavior: smooth;
 }
@@ -25,11 +27,31 @@ body {
 /* NAVBAR */
 
 .navbar-wrap {
-  position: fixed;
+  position: fixed!important;
   display: flex;
   width: 100%;
   flex-direction: row;
   z-index: 99999;
+  top: 0;
+}
+.navb{
+  position: fixed;
+  z-index: 99999;
+}
+.navigation-bar{
+  /* position: fixed!important;
+  z-index: 99999;  
+  width: 100%;
+  top: 54px; */
+
+}
+#navbar {
+  /* position: fixed;
+  top: -50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  transition: top 0.3s; */
 }
 .logo-wrap * {
   width: 62px;
@@ -120,6 +142,7 @@ body {
 /*
  ######       SVG ENDS    ######
 */
+
 .header {
   height: 100vh;
   background: #E5E8E8;
@@ -434,7 +457,7 @@ blockquote > p {
   grid-template-columns: auto;
   /* max-width: 899px; */
 }
-hr {
+.founder hr {
   background: #001A7D;
   height: 0.5px;
   margin-bottom: 1vw;
