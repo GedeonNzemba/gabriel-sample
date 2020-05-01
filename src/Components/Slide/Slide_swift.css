@@ -1,0 +1,16 @@
+.paragraph_wrap{
+    display: block;
+ 
+}
+.paragraph_slide::before{
+    content: '';
+    margin-left: 5%;
+
+}
+.paragraph_slide::after{
+    content: '';
+    margin-right: 5%;
+
+}
+.image_sdn {
+}

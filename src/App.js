@@ -9,6 +9,7 @@ import { SectionIntro } from './Components/Section-intro';
 import { Founder } from './Components/Founder';
 import { Main } from './Components/Main';
 import Slide from './Components/Slide/Slide';
+import Slide_swift from './Components/Slide/Slide_swift';
 
 
 
@@ -235,6 +236,7 @@ class App extends React.Component {
         />
         
         <Slide />
+        <Slide_swift />
 
         <Main 
         securityHeading={this.state.securityHeading}

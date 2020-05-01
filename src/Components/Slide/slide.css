@@ -1,8 +1,23 @@
 .slide-content:hover{
     cursor: pointer;
 }
-.slide-content
+.slide-container {
+    border: 1px solid gold;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #d0e5e5;
+}
+
  
+
+
+
+
+
+
+
+
+
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
@@ -23,11 +38,10 @@
 }
 
 .slides .slick-prev {
-  left: 20%;
-}
-img{
+  left: 10%;
 }
 
+
 .slides .slick-next {
-  right: 20%;
+  right: 10%;
 }

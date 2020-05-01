@@ -6,7 +6,7 @@ import image_2 from '../../_assets/image_6.png';
 import image_3 from '../../_assets/image_7.png';
 import image_4 from '../../_assets/image_8.png';
 import image_5 from '../../_assets/image_9.png';
-import './slide.css';
+import './Slide_swift.css';
 import Slider from 'react-slick';
 
 
@@ -41,12 +41,14 @@ export class Slide extends React.Component{
 
         const settings = {
             dots: true,
-            fade: true,
-            arrows: true,
+            fade: false,
+            arrows: false,
             infinite: true,
             speed: 500,
+            lazyLoad: true,
             slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToScroll: 2,
+            autoplay: true,
             className: 'slides'
 
             // className: "center",
@@ -59,16 +61,17 @@ export class Slide extends React.Component{
 
         return(
             // eslint-disable-next-line no-sequences
-            <div className="slide-container" style={{marginTop: "10em"}, {padding: "24px"}}>
+            <div className="slide-container">
                 <Slider {...settings}>
                     {photos.map((photo) => {
                         return(
                             <div className="slide-inner-container">
                                 <center>
                                     <div className="slide-content">
-                                    <img width="50%" alt="slides" src={photo.url} />
-                                    <figcaption>{photo.name}</figcaption>
-                                </div>
+                                        <figcaption><h2 style={{color: '#001A7D'}}>{photo.name}</h2></figcaption>
+                                        <img width="50%" alt="slides" src={photo.url} />
+                                        
+                                    </div>
                                 </center>
                                 
                             </div>
