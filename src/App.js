@@ -8,6 +8,8 @@ import { Header } from './Components/Header';
 import { SectionIntro } from './Components/Section-intro';
 import { Founder } from './Components/Founder';
 import { Main } from './Components/Main';
+import Slide from './Components/Slide/Slide';
+
 
 
 
@@ -232,6 +234,8 @@ class App extends React.Component {
         SvgG={this.state.SvgG}
         />
         
+        <Slide />
+
         <Main 
         securityHeading={this.state.securityHeading}
         _security={this.state._security}

@@ -269,26 +269,25 @@ export class Main extends React.Component {
               <article className="swift_app_frame">
                 <div className="frame">
                   <ul id="overflow">
-                    <hr />
                     <li className="article_item item_swif_info_on1">
                       <div className="item_header">{this.props.incident}</div>
                       <div className="item_content">
                         {this.props.incident_reporting}
                       </div>
                     </li>
-                    <hr id="line" />
+                    <br />
                     <li className="article_item item_swif_info_on2">
                       <div className="item_header">{this.props.function}</div>
                       <div className="item_content">
                         {this.props.watchMe_function}
                       </div>
                     </li>
-                    <hr />
+                    <br />
                     <li className="article_item item_swif_info_on3">
                       <div className="item_header">{this.props.SOS}</div>
                       <div className="item_content">{this.props.emergency}</div>
                     </li>
-                    <hr id="line" />
+                    <br />
                     <li className="article_item item_swif_info_on3">
                       <div className="item_header">{this.props.Message}</div>
                       <div className="item_content">

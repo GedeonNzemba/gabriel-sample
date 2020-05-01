@@ -14,8 +14,8 @@ body {
 }
 
 .App {
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
   text-align: center;
   background: #E5E8E8;
 }

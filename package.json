@@ -15,7 +15,9 @@
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.7.1",
     "react-scripts": "3.4.1",
-    "react-transition-group": "^1.2.1"
+    "react-slick": "^0.25.2",
+    "react-transition-group": "^1.2.1",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",

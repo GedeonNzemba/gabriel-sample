@@ -787,9 +787,33 @@
 }
 
 @media (max-width: 768px){
+  /* .cctv_camera_info_content h2, .secure_generator_info_content h2, .swift_app_info_content h2 {
+    font-size: calc(25px + (40 - 25)*(100vw - 500px) / (768 - 500));
+  } */
  
-}
-@media (max-width: 420px){}
+  .security_info_content{
+    padding-top: 0;
+  }
+  .swift_app_info_content{
+    padding-top: 0;
+    justify-content: end;
+  }
+  .swift_app_quote_wrap h1{
+    /*font-size: calc(0px + (18 - 0)*(100vw - 768px) / (1366 - 768));1.3177159590043923vw*/
+    font-size: 15px;
+    word-spacing: 4px;
+  }
+    .size{
+      width:  calc(320px + (683 - 320)*(100vw - 768px) / (1280 - 768))!important;
+      height:  calc(320px + (450 - 320)*(100vw - 768px) / (1280 - 768))!important;
+    }
+    .item__img--t1 {
+      --overflow: 15px;
+  }
+  }
+ 
+
+
 
 
 
