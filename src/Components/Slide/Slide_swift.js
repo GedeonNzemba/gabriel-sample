@@ -16,6 +16,7 @@ export class slideswift extends React.Component {
       infinite: false,
       speed: 500,
       slidesToShow: 4,
+      className: 'slides',
 
       slidesToScroll: 4,
       initialSlide: 0,
@@ -71,7 +72,7 @@ export class slideswift extends React.Component {
             </p>
           </div>
           <div className="paragraph_slide">
-            <h3 style={{ textAlign: "left" }}>Message Building Management</h3>
+            <h3 style={{ textAlign: "left" }}>Message  Management</h3>
             <hr />
             <p id="paragraph_slide" style={{ textAlign: "left" }}>
               You will have direct contact with building Management.

@@ -8,8 +8,8 @@ import { Header } from './Components/Header';
 import { SectionIntro } from './Components/Section-intro';
 import { Founder } from './Components/Founder';
 import { Main } from './Components/Main';
-import Slide from './Components/Slide/Slide';
 import Sliderswift from './Components/Slide/Slide_swift';
+import Contact from './Components/Contact';
 
 
 
@@ -194,6 +194,7 @@ class App extends React.Component {
     // contact={this.state.Contact}
     // svgD={this.state.SvgD}
     // />
+
     
 
     return (
@@ -247,12 +248,8 @@ class App extends React.Component {
           SvgF={this.state.SvgF}
           SvgG={this.state.SvgG}
         />
-        <div className="slider_1">
-        <Slide />
-        </div>
-        <div className="slider_2">
-        <Sliderswift />
-        </div>
+        
+        
         <Main 
           securityHeading={this.state.securityHeading}
           _security={this.state._security}
@@ -304,7 +301,18 @@ class App extends React.Component {
           SvgF={this.state.SvgF}
           SvgG={this.state.SvgG}
           SvF_contact={this.state.SvF_contact}
+          // swiftSlide= {swiftSlide}
         />
+
+        
+
+        <Sliderswift />
+
+        <Contact
+          instagram={this.state.instagram}
+          facebook={this.state.facebook}
+          SvF_contact={this.state.SvF_contact}
+         />
         </div>
         
         </div>

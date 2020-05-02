@@ -167,7 +167,7 @@ export class SectionIntro extends React.Component {
                             {/* PARALLEX IMAGE */}
                             <div className="content content-intro-p2-md">
                                 <div class="item">
-                                    <div class="item__img-wrap img__intro-p2-md">
+                                    <div class="item__img-wrap img__intro-p2-md" id="img__intro-p2-md">
                                         <div class="item__img item__img--t2 intro-img-p2-md"></div>
                                     </div>
                                 </div>

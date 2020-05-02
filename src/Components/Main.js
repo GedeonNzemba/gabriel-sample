@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import './Responsive/Responsive.css';
+import Slide from './Slide/Slide';
 
 export class Main extends React.Component {
 
@@ -23,7 +24,7 @@ export class Main extends React.Component {
                 <span>{this.props._rapid_response}</span> companies.
               </p>
               <br />
-              <p className="security_bottom_parag paragraph">
+              <p className="security_bottom_parag paragraph" id="security_bottom_parag">
                 Whether you're <span>{this.props._moving_out}</span> for the
                 first time or have decided to join us slightly later, we know
                 how big of a deal leaving your home can be. Rest assured, we’ve
@@ -36,13 +37,17 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item">
-                  <div className="item__img-wrap encrupted_security__image size">
+                  <div className="item__img-wrap encrupted_security__image size" id="encrupted_security__image">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="slider_1">
+        <Slide />
+        </div>
 
           {/* Inspiration quote */}
           <div className="security_inspiration_quote">
@@ -302,7 +307,7 @@ export class Main extends React.Component {
             <div className="image_content">
               <div className="content">
                 <div className="item swift_item">
-                  <div className="item__img-wrap swift_app__image size">
+                  <div className="item__img-wrap swift_app__image size" id="swift_app__image">
                     <div className="item__img item__img--t1"></div>
                   </div>
                 </div>
@@ -317,88 +322,7 @@ export class Main extends React.Component {
           </div>
         </section>
 
-        <section className="contact_us">
-          <div className="contact_text">
-            <h5>Contact Us</h5>
-          </div>
-
-          <div className="contact_form_container">
-              <div className="form_wrap">
-                <div className="form_left">
-                  <h1>Have Q's? We have the A's!</h1>
-                  <form method="get" action="./form.php" encType={FormData} target="_blank" >
-                    <section className="getNames">
-                      <input
-                        type="text"
-                        name="firstname"
-                        id="firstName"
-                        placeholder="First Name"
-                        autoComplete='true'
-                        required
-                      ></input>
-                      <input
-                        type="text"
-                        name="lastname"
-                        id="secondName"
-                        placeholder="Last Name"
-                        autoComplete='true'
-                        required
-                      ></input>
-                    </section>
-                    <section className="getEmail">
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Email Address"
-                        id="email"
-                        required
-                      ></input>
-                    </section>
-                    <section className="textarea">
-                      <textarea
-                        type="textarea"
-                        name="message"
-                        placeholder="Your Message"
-                        id="textarea"
-                        required
-                      ></textarea>
-                    </section>
-                    <section className="submit_button">
-                      <button type="submit" name="submit"  id="submit_button" formAction="contactForm" formTarget="_blank">
-                        Send
-                      </button>
-                    </section>
-                  </form>
-                </div>
-                <aside id="intro_svg_top_s9">
-            {this.props.SvF_contact}
-          </aside>
-          <aside id="intro_svg_bottom_s9">
-            {this.props.SvF_contact}
-          </aside>
-                <div className="map">
-                  <div className="mapLayout"></div>
-                </div>
-              </div>
-              <div className="footer_container">
-              <footer>
-                <div className="contact_social">
-                  <div className="instagram">{this.props.instagram}</div>
-                  <div className="facebook">{this.props.facebook}</div>
-                </div>
-                <div className="footer_email">
-                  <div className="phone_number">
-                    0839488442
-                  </div>
-                  <div className="mail_message">
-                    <span><img src={require('../_assets/mail.png')} alt="email" className="mail"/></span>
-                    info@properlivingproperty.com
-                  </div>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </section>
+        
       </main>
     );
   }
