@@ -46,7 +46,10 @@ export class Main extends React.Component {
           </div>
 
           <div className="slider_1">
-        <Slide />
+        <Slide 
+          security_inspiration_quote={this.props.security_quote}   //security inspiration quote props
+
+        />
         </div>
 
           {/* Inspiration quote */}

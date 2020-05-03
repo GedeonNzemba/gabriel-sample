@@ -25,7 +25,7 @@ class App extends React.Component {
       Vision: 'Vision',
       Contact: 'Contact',
       // HEADER
-      Ftitle: <span>We design {" "} <span id="fragement_1">modern</span> {" "} communities</span>,
+      Ftitle: <span> design {" "} <span id="fragement_1">modern</span> {" "} communities</span>,
       Stitle: 'that advance the wellbeing of young',
       Ttitle: 'adults',
       SvgA: <svg xmlns="http://www.w3.org/2000/svg" width={106} height="17.18" viewBox="0 0 106 17.18">

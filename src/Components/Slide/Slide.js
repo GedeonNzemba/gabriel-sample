@@ -7,37 +7,51 @@ import image_3 from '../../_assets/image_7.png';
 import image_4 from '../../_assets/image_8.png';
 import image_5 from '../../_assets/image_9.png';
 import './Slide_swift.css';
+import '../../App.css';
 import Slider from 'react-slick';
 
 
 
 
-const photos = [
-    {
-        name: '24/7 CCTV Camera',
-        url: image_1
-    },
-    {
-        name: 'Rotational Guards',
-        url: image_2
-    },
-    {
-        name: 'Biometric System',
-        url: image_3
-    },
-    {
-        name: 'Digital Guess Sign in Tracking',
-        url: image_4
-    },
-    {
-        name: 'Secure Generator',
-        url: image_5
-    },
-]
-
 export class Slide extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            security_inspiration_quote: <div id="slide_quote_one">
+                                            <div className="quote_wrap" style={{width: '100%', textAlign: 'left'}}>
+                                            <q style={{fontSize: '2.5vw'}}>{this.props.security_inspiration_quote}</q>
+                                            <br />
+                                            </div>
+                                        </div>
+
+        }
+    }
 
     render(){
+       
+        const photos = [
+            {
+                name: '24/7 CCTV Camera',
+                info: this.state.security_inspiration_quote,
+                url: image_1
+            },
+            {
+                name: 'Rotational Guards',
+                url: image_2
+            },
+            {
+                name: 'Biometric System',
+                url: image_3
+            },
+            {
+                name: 'Digital Guess Sign in Tracking',
+                url: image_4
+            },
+            {
+                name: 'Secure Generator',
+                url: image_5
+            },
+        ]
 
         const settings = {
             dots: true,
@@ -46,7 +60,7 @@ export class Slide extends React.Component{
             infinite: true,
             speed: 500,
             lazyLoad: true,
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             className: 'slides'
@@ -68,9 +82,9 @@ export class Slide extends React.Component{
                             <div className="slide-inner-container">
                                 <center>
                                     <div className="slide-content">
-                                        <figcaption><h2 style={{color: '#001A7D'}}>{photo.name}</h2></figcaption>
-                                        <img width="50%" alt="slides" src={photo.url} />
                                         
+                                        <img width="90%" alt="slides" src={photo.url} style={{paddingBlockEnd: '1em'}}/>
+                                        <figcaption style={{paddingBlockEnd: '1em'}}><h2 style={{color: '#001A7D', margin: '0'}}>{photo.info}</h2></figcaption>
                                     </div>
                                 </center>
                                 

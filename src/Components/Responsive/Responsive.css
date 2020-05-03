@@ -1,3 +1,13 @@
+@media (max-width: 1600px) and (min-width: 1181px){
+    .secure_generator_inspiration_quote,
+     .biometric_system_inspiration_quote, 
+     .rational_guards_inspiration_quote, 
+     .cctv_camera_inspiration_quote, 
+     .security_inspiration_quote, 
+     .digital_guest_inspiration_quote {
+      top: calc(10px + ((-30) - 10)*(100vw - 1366px) / (1600 - 1366))!important;
+  }
+}
 @media (min-width: 769px) {
   .weaver_explanation_text-tablet {
     display: none;
@@ -979,6 +989,10 @@ padding-bottom: 8em;
 }
 
 @media (max-width: 767px) {
+  .security_inspiration_quote{display: none;}
+  #intro_svg_top_s4{display: none;}
+  #intro_svg_bottom_s4{display: none;}
+  .slider_1{padding-bottom: 8em;}
   #swift_app__image {
     width: calc(120px + (360 - 120)*(100vw - 200px) / (767 - 200));
     height: calc(80px + (280 - 80)*(100vw - 200px) / (767 - 200));
